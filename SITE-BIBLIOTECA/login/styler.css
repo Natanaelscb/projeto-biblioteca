@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(7, 82, 157);
+    margin: 0;
+    padding: 0;
+    /* Faz o conteúdo ficar centralizado no ecrã */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px; /* Cantos arredondados ficam melhor que bordas grossas */
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilo extra para os inputs e botão */
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #07529d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
