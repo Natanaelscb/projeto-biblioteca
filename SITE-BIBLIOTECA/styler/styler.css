@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(7, 82, 157);
+    background-image: url("../img/Governo_de_Pernambuco_Editado.jpg"); /*add imagem no fundo do site*/
+    background-size: cover;
     margin: 0;
     padding: 0;
     /* Faz o conteúdo ficar centralizado no ecrã */
