@@ -13,7 +13,7 @@ document.getElementById("login").addEventListener("submit", function(event){
 
     /*window representa a janela do navegador E location representa o endereço da página (URL).*/ 
     if(encontrado){
-        window.location.href = "../inicio/index.html" 
+        window.location.href = "/SITE-BIBLIOTECA/inicio/home.html" 
     } else{
         alert('USER OU SENHA ERRADOS TENTE NOVAMENTE...')
 
