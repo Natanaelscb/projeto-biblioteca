@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT - BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emprestar</title>
+    <link rel="stylesheet" href="../styler/emprestimo.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a href="buscarl.html">
+                <button>Buscar livros</button></a>
+            <br><br>
+
+            <a href="alunos.html">
+                <button>Alunos</button></a>
+            <br><br>
+
+            <a href="relatorio.html">
+                <button>Relatorio</button></a>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1> Emprestimo & Cadastro</h1>
+            <form action="#" id="emprestimo">
+                <section id="dadosaluno">
+                    <h2>Aluno</h2>
+                    <label for="matricula">Matricula</label>
+                    <input type="number" id="matricula" name="matricula"><br><br>
+
+                    <label for="nome">Nome do Aluno</label>
+                    <input type="text" id="nome" name="nome"><br><br>
+                </section>
+
+                <section>
+                    <h2>LIvro</h2>
+                    <label for="tituloDoLivro">Titulo do livro</label>
+                    <input type="text" id="tituloDoLivro" name="tituloDoLivro"><br><br>
+
+                    <label for="autor">Autor</label>
+                    <input type="text" id="autor" name="autor"> <br><br>
+                </section>
+                <section>
+                    <h2>Empréstimo</h2>
+
+                    <label>Data do Empréstimo</label>
+                    <input type="date" name="dataEmprestimo"><br><br>
+
+                    <label>Data de Devolução</label>
+                    <input type="date" name="dataDevolucao">
+                </section>
+
+            </form>
+
+        </section>
+    </main>
+
 </body>
+
 </html>
