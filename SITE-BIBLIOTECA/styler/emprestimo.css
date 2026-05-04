@@ -1,19 +1,50 @@
-body{
-    background-color: rgb(215, 215, 223);
-    padding: 50px;
-    margin: 50px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-nav a{ 
-    display: block;
-    color: white;
+
+/* Sidebar */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: blue;
+    padding: 20px;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botões */
+nav a {
     text-decoration: none;
-    text-align: center;
-    margin: 10px 0;
-    border: 2px white solid;
-    border-radius: 10px;
-    padding: 8px;
+}
 
+nav button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
 
-    
+nav button:hover {
+    background-color: #666;
+}
 
+/* Conteúdo principal */
+main {
+    margin-left: 240px; /* espaço da sidebar */
+    padding: 20px;
+}
+section{
+    margin-left: 10px;
 }
