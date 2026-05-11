@@ -1,50 +1,58 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: #f5f6fa;
 }
 
 /* Sidebar */
-header {
+.sidebar {
     position: fixed;
     left: 0;
     top: 0;
-    width: 200px;
+    width: 120px;
     height: 100vh;
-    background-color: blue;
-    padding: 20px;
+    background-color: #1E3A8A;
+    padding: 0.5px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+/* Título */
+.sidebar h2 {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 20px;
 }
 
 /* Menu */
 nav {
+    font-size: 10px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-/* Botões */
+/* Links viram botões */
 nav a {
+    display: block;
     text-decoration: none;
-}
-
-nav button {
-    width: 100%;
+    color:white;
     padding: 10px;
-    margin-left: 5px;
-    border: none;
     border-radius: 8px;
-    background-color: blue;
-    color: white;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
-nav button:hover {
-    background-color: #666;
+/* Hover bonito */
+nav a:hover {
+    background-color: #2563EB; /* cor quando o mouse passar por cima*/
+    transform: translateX(5px); /*faz o botão se mexer pra frente*/
 }
 
-/* Conteúdo principal */
+/* Conteúdo */
 main {
-    margin-left: 240px; /* espaço da sidebar */
+    font-size: 10px;
+    margin-left: 120px; /* jogar o main para a direita*/
     padding: 20px;
-}
-section{
-    margin-left: 10px;
+    background: #f5f6fa;
+
 }

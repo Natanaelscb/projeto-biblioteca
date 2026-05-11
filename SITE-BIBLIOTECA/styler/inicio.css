@@ -1,20 +1,103 @@
 body {
-   background-image: url("../img/Governo_de_Pernambuco_Editado.jpg"); /*add imagem no fundo do site*/
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    padding: 0;
     margin: 0;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 120px;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1E3A8A;
+    padding: 0.5px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+/* Título */
+.sidebar h2 {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Menu */
+nav {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Links viram botões */
+nav a {
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Hover bonito */
+nav a:hover {
+    background-color: #2563EB; /* cor quando o mouse passar por cima*/
+    transform: translateX(5px); /*faz o botão se mexer pra frente*/
+}
+
+/* Conteúdo */
+main {
+    font-size: 10px;
+    margin-left: 120px; /* jogar o main para a direita*/
+    padding: 20px;
+    background: #f5f6fa;
 
 }
-section{
-    background-color: white;
-    color: black;
-    padding:30px; border-radius: 25px;
-    box-shadow: 0px 4px 15px black;
-    width: auto;
-    text-align:left;
+
+/* Texto */
+section {
+    margin-left: 10px;
+}
+
+.cards{
+    display: grid;
+    gap: 30px;
+    margin-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.numero{
+    margin: 2;
+    font-family:sans-serif;
+    font-size: 14px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 2px;
+    border-radius: 15x;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.dashboard{
+    gap: 2px;
+    width: fit-content;
+    background: #f5f6fa;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
+}
+.card2{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
